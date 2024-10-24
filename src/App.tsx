@@ -1,11 +1,26 @@
-import { Button } from "@chakra-ui/react";
-import { div } from "framer-motion/client";
+import { Grid, GridItem, Show, useBreakpointValue } from "@chakra-ui/react";
 
 function App() {
+  const isLargScreen = useBreakpointValue({ base: false, lg: true });
   return (
-    <Button colorPalette="green" variant="surface">
-      Button
-    </Button>
+    <Grid
+      templateAreas={{
+        base: `"nav" "main" `,
+        lg: `"nav nav" "aside main" `,
+      }}
+    >
+      <GridItem area="nav" bg="coral">
+        nav
+      </GridItem>
+      <Show when={isLargScreen}>
+        <GridItem area="aside" bg="gray">
+          aside
+        </GridItem>
+      </Show>
+      <GridItem area="main" bg="blue">
+        main
+      </GridItem>
+    </Grid>
   );
 }
 
