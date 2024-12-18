@@ -1,7 +1,8 @@
-import "./App.css";
+import { Box } from "@chakra-ui/react";
+import { Button } from "@/components/ui/button";
 
 function App() {
-  return <div>Helooo</div>;
+  return <Button>Button</Button>;
 }
 
 export default App;
