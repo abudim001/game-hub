@@ -1,6 +1,5 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./component/NavBar";
-import ColorModeSwitch from "./component/ColorModeSwitch";
 import GameGrid from "./component/GameGrid";
 import GenreList from "./component/GenreList";
 
