@@ -6,14 +6,16 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    /* Updated to node mode for Chakra UI compatibility */
+    "moduleResolution": "node",
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-    "paths":{
+
+    /* Base URL and corrected paths */
+    "baseUrl": "./",
+    "paths": {
       "@/*": ["./src/*"]
     },
 
