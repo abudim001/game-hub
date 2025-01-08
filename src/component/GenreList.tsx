@@ -7,7 +7,6 @@ import {
   Image,
   List,
   ListItem,
-  Spinner,
 } from "@chakra-ui/react";
 
 interface Props {
@@ -16,10 +15,10 @@ interface Props {
 }
 
 const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
-  const { data, error, isLoading } = useGenres();
+  const { data, error } = useGenres();
 
   if (error) return null;
-  if (isLoading) return <Spinner marginY="15px" />;
+  // if (isLoading) return <Spinner marginY="15px" />;
 
   return (
     <>
