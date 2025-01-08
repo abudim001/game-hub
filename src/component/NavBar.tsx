@@ -1,4 +1,4 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image, Link, LinkBox, Text } from "@chakra-ui/react";
 import logo from "../assets/Logo.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
@@ -9,7 +9,9 @@ interface Props {
 const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack padding="10px">
-      <Image borderRadius={"2xl"} src={logo} boxSize="60px" />
+      <Link href="./" boxSize="60px" objectFit="cover">
+        <Image borderRadius={"2xl"} src={logo} />
+      </Link>
       <SearchInput onSearch={onSearch} />
       <ColorModeSwitch />
     </HStack>
