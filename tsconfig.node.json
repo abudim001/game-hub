@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2023"],
+    "lib": ["ES2022"], // Compatible with TypeScript 4.8.4
     "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    /* Node module resolution */
+    "moduleResolution": "node", // Changed from 'bundler' to 'node'
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
