@@ -1,6 +1,6 @@
 import apiClient from '@/services/api-client';
 import { AxiosRequestConfig, CanceledError } from 'axios';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 interface FetechResponse<T>{
     count: number;
